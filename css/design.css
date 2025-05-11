@@ -463,6 +463,11 @@ width: 100%;
   display: flex;
   padding-top: 54px;
 }
+@media (max-width: 768px) {
+  .land-small-sec {
+  flex-direction: column;
+}
+}
 .beside-ico p{
   color: #91939B;
   margin: 0;
@@ -697,7 +702,7 @@ width: 100%;
   }
    .free-box{
     bottom: -50px;
-    width: 100%;
+    /* width: 100%; */
     left: 0;
   }
 }
@@ -709,7 +714,7 @@ width: 100%;
         }
         .team-title {
             color: #1a3c3c;
-            font-size: 40px;
+            font-size: 36px;
             margin-bottom: 20px;
             position: relative;
             padding-left: 76px;

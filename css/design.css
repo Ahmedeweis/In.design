@@ -153,7 +153,7 @@ header {
 }
 @media (max-width: 768px) {
   header {
-    /* background-image:none; */
+    background-image:none;
   }
 }
 .navbar {

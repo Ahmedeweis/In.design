@@ -31,19 +31,19 @@
 							<a href="#home" class="ref">Home</a>
 						</li>
 						<li class="list-item">
-							<a href="#Projects" class="ref">About US</a>
+							<a href="#about" class="ref">About US</a>
 						</li>
 						<li class="list-item">
-							<a href="#pricing" class="ref">Services</a>
+							<a href="#serv" class="ref">Services</a>
 						</li>
 						<li class="list-item">
-							<a href="#skills" class="ref">Portfolio</a>
+							<a href="#projects" class="ref">Portfolio</a>
 						</li>
 						<li class="list-item">
-							<a href="#experience" class="ref">Shop</a>
+							<a href="#products" class="ref">Shop</a>
 						</li>
 						<li class="list-item">
-							<a href="#testimonials" class="ref">Contacts</a>
+							<a href="#footer" class="ref">Contacts</a>
 						</li>
 					</div>
 					<ul class="hadle hndl2">
@@ -110,11 +110,11 @@
 				</div>
 				<div class="right-paner">
 					<div class="image-container">
-						<img id="slider-image" src="img/banner1.jpg" class="img350" />
-					</div>
-					<div class="bannerclass">
-						<button class="site-btn" id="prevBtn">&lsaquo;</button>
-						<button class="site-btn" id="nextBtn">&rsaquo;</button>
+						<img id="slider-image" src="img/banner1.jpg" class="img350 sudo-ele" />
+						<div class="bannerclass">
+							<button class="site-btn" id="prevBtn">&lsaquo;</button>
+							<button class="site-btn" id="nextBtn">&rsaquo;</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -156,8 +156,8 @@
 		</section>
 		<!-- 1 History  -->
 		<!-- 0 fashion design  -->
-		<section class="team-section container">
-			<h1 class="team-title">A team United by shared values</h1>
+		<section class="team-section container" id="about">
+			<h2 class="team-title">A team United by shared values</h2>
 			<div class="team-container">
 				<div class="team-info">
 					<h2>6</h2>
@@ -223,7 +223,7 @@
 		</section>
 		<!-- 1 fashion design  -->
 		<!-- 0  interstes -->
-		<section>
+		<section id="serv">
 			<div class="container spe-header">
 				<h1 class="team-title">Our work process make your dream true</h1>
 				<div class="more-btn d-n">
@@ -277,48 +277,331 @@
 		<!-- 0 Companies  -->
 		<section class="companies">
 			<div class="container">
+				<div class="w-50">
+					<div class="right-his">
+						<h2>Our latest projects</h2>
+						<p>This is why we are proud to offer a wide selection of our designer ceiling, wall,
+							floor and table lamps. You will also find products ranging from modern styles, modern
+							interpretations of classic design.
+							Our collection is updated every day with beautiful solutions and we are glad that you, our
+							customers
+						</p>
+						<div class="more-btn" style="margin-top: 60px;">
+							<a href="" style="margin-top: 0;">Read more</a>
+							<div class="btn-container">
+								<button class="site-btn" id="prevBtnCompanies">‹</button>
+								<button class="site-btn" id="nextBtnCompanies">›</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w-50">
+					<div class="containero">
+						<div class="w-50o">
+							<div class="left-hiso kitcheno">
+								<div class="overlayo">
+									<h2>Kitchen</h2>
+									<p>75 projects</p>
+								</div>
+							</div>
+						</div>
+						<div class="w-50o">
+							<div class="left-hiso commercialo">
+								<div class="overlayo">
+									<h2>Commercial</h2>
+									<p>49 projects</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<!-- 1 Companies  -->
+		<!-- 0 products -->
+		<section class="products" id="products">
+			<div>
+				<div class="container prod-head ">
+					<div class="prod-text">
+						<h2>Catalog</h2>
+						<h3>Select the appropriate option</h3>
+						<span class="line"></span>
+					</div>
+					<img src="img/pager3.jpg" class="img-mo d-n">
+				</div>
+			</div>
+			<div class="container">
+				<div class="product-section">
+					<!-- Filters Sidebar -->
+					<div class="filters-sidebar">
+						<div class="search-bar">
+							<input type="text" id="searchInput" placeholder="Search products...">
+							<i class="fas fa-search"></i>
+						</div>
+						<div class="filter-box categories">
+							<h3>Categories</h3>
+							<ul>
+								<li data-category="Chairs"><span>Chairs</span><span class="count">(25)</span></li>
+								<li data-category="Tables"><span>Tables</span><span class="count">(18)</span></li>
+								<li data-category="Sofas"><span>Sofas</span><span class="count">(12)</span></li>
+								<li data-category="Lamps"><span>Lamps</span><span class="count">(30)</span></li>
+							</ul>
+						</div>
+						<div class="filter-box price-range">
+							<h3>Price Range</h3>
+							<div class="selected-range" id="priceRange">$15 - $35</div>
+							Start
+							<input type="range" id="minPrice" min="15" max="35" value="15">
+							End
+							<input type="range" id="maxPrice" min="15" max="35" value="35">
+						</div>
+						<div class="filter-box toggles">
+							<h3>Tages</h3>
+							<label>
+								<span>Only Available</span>
+								<input type="checkbox" id="onlyAvailable">
+								<span class="switch"></span>
+							</label>
+							<label>
+								<span>On Sale</span>
+								<input type="checkbox" id="onSale">
+								<span class="switch"></span>
+							</label>
+						</div>
+					</div>
+					<!-- Products Grid -->
+					<div class="products-grid">
+						<div class="product-card" data-category="Chairs" data-price="25.99" data-available="true"
+							data-on-sale="true">
+							<div class="product-image">
+								<img src="img/shop1.png" alt="Modern White Wooden Chair">
+								<i class="far fa-heart"></i>
+								<span class="product-tag">New</span>
+							</div>
+							<div class="product-info">
+								<div class="action-row">
+									<a href="#" class="view-details">Details</a>
+									<span class="price">$25.99</span>
+									<button class="add-btn">+</button>
+								</div>
+								<span class="description">Color: White</span>
+								<h3>Modern White Wooden Chair</h3>
+							</div>
+						</div>
+						<div class="product-card" data-category="Tables" data-price="30.50" data-available="true"
+							data-on-sale="false">
+							<div class="product-image">
+								<img src="img/shop2.png" alt="Glass Coffee Table">
+								<i class="far fa-heart"></i>
+							</div>
+							<div class="product-info">
+								<div class="action-row">
+									<a href="#" class="view-details">Details</a>
+									<span class="price">$30.50</span>
+									<button class="add-btn">+</button>
+								</div>
+								<span class="description">Color: Transparent</span>
+								<h3>Glass Coffee Table</h3>
+							</div>
+						</div>
+						<div class="product-card" data-category="Sofas" data-price="32.00" data-available="false"
+							data-on-sale="true">
+							<div class="product-image">
+								<img src="img/shop3.png" alt="Gray Velvet Sofa">
+								<i class="far fa-heart"></i>
+								<span class="product-tag">Best Seller</span>
+							</div>
+							<div class="product-info">
+								<div class="action-row">
+									<a href="#" class="view-details">Details</a>
+									<span class="price">$32.00</span>
+									<button class="add-btn">+</button>
+								</div>
+								<span class="description">Color: Gray</span>
+								<h3>Gray Velvet Sofa</h3>
+							</div>
+						</div>
+						<div class="product-card" data-category="Lamps" data-price="18.99" data-available="true"
+							data-on-sale="false">
+							<div class="product-image">
+								<img src="img/shop4.png" alt="Minimalist Floor Lamp">
+								<i class="far fa-heart"></i>
+							</div>
+							<div class="product-info">
+								<div class="action-row">
+									<a href="#" class="view-details">Details</a>
+									<span class="price">$18.99</span>
+									<button class="add-btn">+</button>
+								</div>
+								<span class="description">Color: Black</span>
+								<h3>Minimalist Floor Lamp</h3>
+							</div>
+						</div>
+						<div class="product-card" data-category="Chairs" data-price="22.50" data-available="true"
+							data-on-sale="true">
+							<div class="product-image">
+								<img src="img/shop5.png" alt="Ergonomic Office Chair">
+								<i class="far fa-heart"></i>
+								<span class="product-tag">New</span>
+							</div>
+							<div class="product-info">
+								<div class="action-row">
+									<a href="#" class="view-details">Details</a>
+									<span class="price">$22.50</span>
+									<button class="add-btn">+</button>
+								</div>
+								<span class="description">Color: Black</span>
+								<h3>Ergonomic Office Chair</h3>
+							</div>
+						</div>
+						<div class="product-card" data-category="Tables" data-price="28.00" data-available="false"
+							data-on-sale="false">
+							<div class="product-image">
+								<img src="img/shop6.png" alt="Wooden Dining Table">
+								<i class="far fa-heart"></i>
+							</div>
+							<div class="product-info">
+								<div class="action-row">
+									<a href="#" class="view-details">Details</a>
+									<span class="price">$28.00</span>
+									<button class="add-btn">+</button>
+								</div>
+								<span class="description">Color: Brown</span>
+								<h3>Wooden Dining Table</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 1 products -->
+		<!-- 0 Form -->
+		<section class="companies" style="position: relative;">
+			<div class="container">
+				<div class="w-50">
+					<div class="right-his">
+						<h2>Get a free consultation. Just leave a request belows</h2>
+						<div class="more-btn"
+							style="margin-top: 60px; justify-content: flex-start; flex-wrap: wrap; align-items: flex-start;">
+							<input type="text" class="custom-input" placeholder="Your phone number"
+								style="margin-right: 30px;">
+							<a href="" style="margin-top: 0;" class="sutable">Call back</a>
+						</div>
+					</div>
+				</div>
+				<div class="w-50 end d-9-none free-img">
+					<img src="img/img5.jpg" class="img350 ">
+				</div>
+			</div>
+		</section>
+		<!-- 1 Form -->
+		<!-- 0 projects -->
+		<section class="projects" id="projects">
+			<div class="container">
+				<div class="projects-grid">
+					<div class="project-card">
+						<div class="project-image" style="background-image: url('img/blog1.jpg');">
+							<div class="date-container">Internal Décor</div>
+						</div>
+						<div class="project-text">
+							<span>Mar 10, 2022</span>
+							<h3>Modern Living Room Styles</h3>
+							<p>Explore cozy and elegant ideas to bring warmth and sophistication into your living space.
+							</p>
+							<div class="land-btn">
+								<a href="">View more</a>
+								<img src="img/next.png" class="icon-size21">
+							</div>
+						</div>
+					</div>
+					<div class="project-card">
+						<div class="project-image" style="background-image: url('img/blog2.jpg');">
+							<div class="date-container">External Décor</div>
+						</div>
+						<div class="project-text">
+							<span>Oct 18, 2023</span>
+							<h3>Garden Lighting Tips Pro</h3>
+							<p>Illuminate your outdoor spaces with ambient lighting ideas perfect for patios and
+								walkways.</p>
+							<div class="land-btn">
+								<a href="">View more</a>
+								<img src="img/next.png" class="icon-size21">
+							</div>
+						</div>
+					</div>
+					<div class="project-card">
+						<div class="project-image" style="background-image: url('img/blog3.jpg');">
+							<div class="date-container">Internal Décor</div>
+						</div>
+						<div class="project-text">
+							<span>Jan 05, 2024</span>
+							<h3>Space-Saving Furniture Ideas</h3>
+							<p>Transform small apartments with smart furniture solutions that save space and add style.
+							</p>
+							<div class="land-btn">
+								<a href="">View more</a>
+								<img src="img/next.png" class="icon-size21">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 1 projects -->
+		<!-- 0 projects -->
+		<section class="">
+			<div class="container">
+			</div>
+		</section>
+		<!-- 1 projects -->
 	</main>
 	<!-- 0 footer -->
-	<footer></footer>
+	<footer class="main-footer" id="footer">
+		<div class="container">
+			<div class="footer-section">
+				<h4>Follow Us</h4>
+				<div class="social-icons">
+					<a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+					<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+					<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<button class="fun-facts-btn">Get Quoat!</button>
+				<div class="fun-facts-panel" id="funFactsPanel">
+					<p id="funFactText">Did you know? The shortest war in history lasted 38 minutes!</p>
+				</div>
+			</div>
+			<div class="footer-section">
+				<h4>About Us</h4>
+				<p>We craft stunning interiors with passion and precision, turning your vision into reality since 2006.
+					We can Create custom design also .
+				</p>
+			</div>
+			<div class="footer-section">
+				<h4>Quick Links</h4>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			<div class="footer-section">
+				<h4>Contact</h4>
+				<p>Email: info@design.com</p>
+				<p>Phone: +1-234-567-890</p>
+				<p>location: 14/1200 , Cario 02 , Egypt</p>
+			</div>
+		</div>
+		<div class="copyright">© 2025 IN.Design. All rights reserved.</div>
+	</footer>
 	<!-- 1 footer -->
+	<p id="scrollTopBtn" class="scroll-top-btn" style="display: none;">
+		<img src="img/right-arrow.png" alt="Up" class="icon-size-s up-btn" />
+	</p>
 	<!-- 0 scripts  -->
 	<script src="js/nav-script.js"></script>
-	<script>
-		const images = [
-			"img/banner1.jpg",
-			"img/banner2.jpg",
-			"img/banner3.jpg"
-		];
-		let currentIndex = 0;
-		const imgElement = document.getElementById("slider-image");
-		function changeImage(direction) {
-			// Add exit animation
-			imgElement.classList.add(direction === 'next' ? 'slide-out-left' : 'slide-out-right');
-			setTimeout(() => {
-				// Update image source
-				currentIndex = direction === 'next'
-					? (currentIndex + 1) % images.length
-					: (currentIndex - 1 + images.length) % images.length;
-				imgElement.src = images[currentIndex];
-				// Remove exit animation and add entrance animation
-				imgElement.classList.remove('slide-out-left', 'slide-out-right');
-				imgElement.classList.add(direction === 'next' ? 'slide-in-right' : 'slide-in-left');
-				// Remove entrance animation after it completes
-				setTimeout(() => {
-					imgElement.classList.remove('slide-in-right', 'slide-in-left');
-					imgElement.classList.add('img-animate');
-					setTimeout(() => imgElement.classList.remove('img-animate'), 200)
-				}, 1);
-			}, 300);
-		}
-		document.getElementById("prevBtn").addEventListener("click", () => changeImage('prev'));
-		document.getElementById("nextBtn").addEventListener("click", () => changeImage('next'));
-		// Optional: Auto-rotate every 5 seconds
-	</script>
-	<!-- 1 scripts  -->
+	<script src="js/Main.js"></script>
 </body>
 
 </html>

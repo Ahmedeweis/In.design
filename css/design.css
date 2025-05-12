@@ -455,6 +455,12 @@ h2 {
   font-weight: 200;
   line-height: 1.2;
 }
+@media (max-width: 767px) {
+  .land-desc {
+  color: black;
+  font-weight: bold;
+}
+}
 .land-btn {
   display: flex;
   justify-content: flex-start;
